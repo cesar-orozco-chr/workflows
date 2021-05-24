@@ -11,4 +11,4 @@ echo "Received $RESPONSE"
 
 ZIPFILE=$(echo $RESPONSE | tr '\"' '\n' | grep zip)
 echo $ZIPFILE
-curl -k --ciphers 'HIGH:!DH:!aNULL' -o $FILE_PATH/$YEAR$MONTH.zip $ZIPFILE
+curl -k --ciphers 'HIGH:!DH:!aNULL' -o /tmp/$YEAR$MONTH.zip $ZIPFILE
